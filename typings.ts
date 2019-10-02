@@ -11,7 +11,7 @@ export type Scalars = {
 
 export type Query = {
    __typename?: 'Query',
-  users: Array<User>,
+  user: User,
 };
 
 export type User = {
@@ -109,7 +109,7 @@ export type ResolversParentTypes = {
 };
 
 export type QueryResolvers<ContextType = any, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
-  users?: Resolver<Array<ResolversTypes['User']>, ParentType, ContextType>,
+  user?: Resolver<ResolversTypes['User'], ParentType, ContextType>,
 };
 
 export type UserResolvers<ContextType = any, ParentType extends ResolversParentTypes['User'] = ResolversParentTypes['User']> = {

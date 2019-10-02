@@ -2,15 +2,13 @@ import { Resolvers } from "./typings";
 
 const resolvers: Resolvers = {
   Query: {
-    users() {
-      return [
-        {
-          id: '1',
-          firstName: 'John',
-          lastName: 'Smith',
-          // Property 'fullName' is missing in type '{ id: string; firstName: string; lastName: string; }' but required in type 'User'.
-        }
-      ]
+    user() {
+      return {
+        id: '1',
+        firstName: 'John',
+        lastName: 'Smith',
+        // Property 'fullName' is missing in type '{ id: string; firstName: string; lastName: string; }' but required in type 'User'.
+      }
     }
   },
   User: {

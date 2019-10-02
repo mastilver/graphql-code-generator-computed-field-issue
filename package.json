@@ -1,0 +1,30 @@
+{
+  "name": "graphql-code-generator-computed-field-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "graphql-codegen --config codegen.yml",
+    "ts": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastilver/graphql-code-generator-computed-field-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mastilver/graphql-code-generator-computed-field-issue/issues"
+  },
+  "homepage": "https://github.com/mastilver/graphql-code-generator-computed-field-issue#readme",
+  "dependencies": {
+    "graphql": "^14.5.8"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.7.0",
+    "@graphql-codegen/typescript": "1.7.0",
+    "@graphql-codegen/typescript-resolvers": "1.7.0",
+    "@graphql-codegen/introspection": "1.7.0"
+  }
+}
